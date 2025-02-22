@@ -1,0 +1,19 @@
+<div class="slideshow-container">
+
+  <div class="mySlides" *ngFor="let slide of slides; let i = index" [ngClass]="{'active': i === currentSlideIndex}">
+    <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
+    <img [src]="slide.image" style="width:100%">
+    <div class="text">{{ slide.description }}</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+  <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" *ngFor="let slide of slides; let i = index" (click)="currentSlide(i)" [ngClass]="{'active': i === currentSlideIndex}"></span>
+</div>
