@@ -1,7 +1,7 @@
 <div class="slideshow-container">
 
   <div class="mySlides" *ngFor="let slide of slides; let i = index" [ngClass]="{'active': i === currentSlideIndex}">
-    <div class="numbertext">{{ i + 1 }} / {{ slides.length }}</div>
+    
     <img [src]="slide.image" style="width:100%">
     <div class="text">{{ slide.description }}</div>
   </div>

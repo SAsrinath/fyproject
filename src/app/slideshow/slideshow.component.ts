@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class SlideshowComponent implements OnInit, OnDestroy {
   slides: Slide[] = [
-    { image: 'assets/product1.jpg', description: 'Product 1 Description', active: false },
+    { image: 'assets/product1.jpg', description: 'TVS Allen Bolt', active: false },
     { image: 'assets/product2.jpg', description: 'Product 2 Description', active: false },
     { image: 'assets/product3.jpg', description: 'Product 3 Description', active: false },
     { image: 'assets/product4.jpg', description: 'Product 4 Description', active: false },

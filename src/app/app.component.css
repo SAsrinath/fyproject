@@ -71,14 +71,6 @@ body {
   margin-bottom: 20px;
 }
 
-.search-bar {
-  padding: 10px;
-  font-size: 16px;
-  width: 80%;
-  max-width: 500px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
 /* About Us & Contact Section */
 .about-us, .contact {
